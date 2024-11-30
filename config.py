@@ -1,4 +1,4 @@
-TOKEN = '7863737190:AAGh97iVx_of9bEvmUQ0IjgySzXmIkgSApQ'
+TOKEN = 'TOKEN'
 currentpages = {}
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
