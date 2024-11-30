@@ -193,6 +193,7 @@ def update_question(chat_id, message_id, question_index):
 
 def send_answer(chat_id, message_id, answer):
     thread_url, answer_text = answer
+    answer_text = answer_text[:3000]
     bot.edit_message_text(chat_id=chat_id, message_id=message_id, text=f"💬 Ответ:\n{answer_text}\n\n[🔗 Источник]({thread_url})",
                           parse_mode='Markdown', reply_markup=config.GetAnswerInlineKeyboard())
 
